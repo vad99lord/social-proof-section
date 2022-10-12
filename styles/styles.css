@@ -61,6 +61,13 @@ body {
   margin: 0.5rem;
 }
 
+.content {
+  background: url("/images/bg-pattern-top-desktop.svg") left top
+      no-repeat,
+    url("/images/bg-pattern-bottom-desktop.svg") right bottom
+      no-repeat;
+}
+
 /* Section grid styles */
 .section-social-proof {
   display: grid;
@@ -218,11 +225,18 @@ body {
 
 /* BELOW 544px (Phones)  */
 @media (max-width: 34em) {
+  .content {
+    background: url("/images/bg-pattern-top-mobile.svg") left top
+        no-repeat,
+      url("/images/bg-pattern-bottom-mobile.svg") right bottom
+        no-repeat;
+  }
+
   .section-social-proof {
     grid-template-columns: 1fr;
   }
 
-  .text-box-container{
+  .text-box-container {
     align-items: center;
     text-align: center;
   }
@@ -236,7 +250,7 @@ body {
     flex-direction: column;
   }
 
-  .testimonial{
-    flex: 0 1 auto;  
+  .testimonial {
+    flex: 0 1 auto;
   }
 }
