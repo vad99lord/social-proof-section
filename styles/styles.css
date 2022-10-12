@@ -37,7 +37,7 @@ White: hsl(0, 0%, 100%)
   margin: 0;
   box-sizing: border-box;
   /* Debugging borders only */
-  outline: 2px solid hsla(111, 37%, 79%,0.4) !important;
+  outline: 2px solid hsla(111, 37%, 79%, 0.4) !important;
 }
 
 html {
@@ -71,4 +71,17 @@ body {
 
 .text-box-description {
   font-size: 1rem;
+}
+
+/* Featured-in styling */
+
+.featured-in {
+  background-color: var(--color-neutral-light);
+  margin: 2rem;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.5rem;
 }
