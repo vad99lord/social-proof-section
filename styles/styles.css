@@ -254,3 +254,17 @@ body {
     flex: 0 1 auto;
   }
 }
+
+
+footer {
+background-color: chocolate;
+}
+
+.attribution {
+  font-size: 2rem;
+  color: cornflowerblue;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
