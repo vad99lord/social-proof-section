@@ -36,6 +36,8 @@ White: hsl(0, 0%, 100%)
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* Debugging borders only */
+  outline: 2px solid hsla(111, 37%, 79%,0.4) !important;
 }
 
 html {
@@ -50,4 +52,23 @@ body {
   line-height: 1;
   color: var(--color-neutral-dark);
   background-color: var(--color-neutral-white);
+  font-weight: 400;
+}
+
+/* Text box section styles */
+
+.text-box-container {
+  background-color: yellow;
+}
+
+.text-box-heading {
+  color: var(--color-primary-dark);
+  letter-spacing: -1.5px;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-box-description {
+  font-size: 1rem;
 }
