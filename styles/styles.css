@@ -115,8 +115,66 @@ body {
   align-self: flex-end;
 }
 
-
 .featured-in-rating {
   display: flex;
   align-items: center;
+}
+
+/* Testimonials styling */
+
+.testimonials-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 15rem;
+  height: 100%;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 8px;
+  background-color: var(--color-primary-dark);
+  padding: 2rem;
+  font-weight: 500;
+}
+
+.testimonial:nth-child(1) {
+  align-self: flex-start;
+}
+
+.testimonial:nth-child(2) {
+  align-self: center;
+}
+
+.testimonial:nth-child(3) {
+  align-self: flex-end;
+}
+
+.testimonial-customer {
+  display: flex;
+  gap: 2rem;
+}
+
+.testimonial-customer-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.testimonial-customer-name {
+  color: var(--color-neutral-white);
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+.testimonial-customer-caption {
+  color: var(--color-primary-soft);
+}
+
+.testimonial-customer-review {
+  color: var(--color-neutral-white);
+  max-width: 30ch;
 }
