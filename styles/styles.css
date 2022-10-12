@@ -61,10 +61,19 @@ body {
   margin: 0.5rem;
 }
 
+/* Section grid styles */
+.section-social-proof {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 9rem 6rem 5rem 6rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
 /* Text box section styles */
 
 .text-box-container {
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .text-box-heading {
@@ -82,6 +91,7 @@ body {
 /* Featured-in styling */
 
 .featured-in-container {
+  justify-self: end;
   width: 100%;
   max-width: 35rem;
   display: flex;
@@ -123,6 +133,7 @@ body {
 /* Testimonials styling */
 
 .testimonials-container {
+  grid-column: 1/-1;
   display: flex;
   gap: 2rem;
   justify-content: center;
@@ -177,4 +188,19 @@ body {
 .testimonial-customer-review {
   color: var(--color-neutral-white);
   max-width: 30ch;
+}
+
+/* MEDIA QUERIES */
+
+/* BELOW 544px (Phones)  */
+@media (max-width: 34em) {
+  .section-social-proof {
+    grid-template-columns: 1fr;
+  }
+  .featured-in-container{
+    max-width: 100%;
+  }
+  .featured-in{
+    max-width: 100%;
+  }
 }
