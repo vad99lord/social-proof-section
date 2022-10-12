@@ -75,8 +75,8 @@ body {
 /* Text box section styles */
 
 .text-box-container {
-  /* background-color: yellow; */
-  /* margin-bottom: 0rem; */
+  display: flex;
+  flex-direction: column;
 }
 
 .text-box-heading {
@@ -155,7 +155,7 @@ body {
   display: flex;
   gap: 2rem;
   justify-content: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   min-height: 30rem;
   height: 100%;
 }
@@ -169,8 +169,6 @@ body {
   padding: 4rem 3.5rem;
   flex: 1;
   font-weight: 500;
-  max-height: 24rem;
-  /* height: 100%; */
 }
 
 .testimonial:nth-child(1) {
@@ -223,10 +221,22 @@ body {
   .section-social-proof {
     grid-template-columns: 1fr;
   }
+
+  .text-box-container{
+    align-items: center;
+    text-align: center;
+  }
+
   .featured-in-container {
     max-width: 100%;
   }
+
   .featured-in {
     max-width: 100%;
+    flex-direction: column;
+  }
+
+  .testimonial{
+    flex: 0 1 auto;  
   }
 }
