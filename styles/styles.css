@@ -105,7 +105,7 @@ body {
 /* Featured-in styling */
 
 .featured-in-container {
-  justify-self: end;
+  justify-self: start;
   width: 100%;
   max-width: 60rem;
   display: flex;
@@ -234,11 +234,16 @@ body {
 
   .section-social-proof {
     grid-template-columns: 1fr;
+    padding: 6rem 3rem 6rem 3rem;
   }
 
   .text-box-container {
     align-items: center;
     text-align: center;
+  }
+
+  .text-box-heading {
+    font-size: 5rem;
   }
 
   .featured-in-container {
@@ -248,6 +253,11 @@ body {
   .featured-in {
     max-width: 100%;
     flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-in-text {
+    font-size: 1.8rem;
   }
 
   .testimonial {
@@ -255,9 +265,8 @@ body {
   }
 }
 
-
 footer {
-background-color: chocolate;
+  background-color: chocolate;
 }
 
 .attribution {
